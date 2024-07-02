@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 九九乘法表
+        // for (let i = 1; i < array.length; i++) {
+        for (let i = 1; i <= 9; i++) {
+
+            let rowText = '';
+            for (let j = 1; j <= 9; j++) {
+                // const element = array[index];
+                // const element = array[index];
+
+                let tmpText=` ${i} * ${j} = ${ i * j } `   //在JavaScript中 ${變數} 是為將${} 內容的結果值輪出之意，非php中的$符號為變數的前置符號
+                                                        //在JavaScript中，使用 重音節符號 ` `將其包起來
+                rowText = rowText + tmpText;                                                        
+            }
+            console.log('rowText', rowText);            // console.log()特性：換行，在執行完成後身會換行。
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
